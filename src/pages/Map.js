@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import PhilippinesMapJSX from '../PhilippinesMapJSX';
 import ".././App.css";
+import MetroManilaMapJSX from '../MetroManilaMapJSX';
 
-const PhilippinesMap = () => {
+const PhilippinesMap = ({ areaType }) => {
   const [provinceLevels] = useState([]);
   const [selectedProvince, setSelectedProvince] = useState(null);
   const [selectedProvinceLayer, setSelectedProvinceLayer] = useState(null);
@@ -40,13 +41,24 @@ const PhilippinesMap = () => {
 
   return (
     <div>
-      <PhilippinesMapJSX
-        setSelectedProvince={setSelectedProvince}
-        setMenuPosition={setMenuPosition}
-        setMenuVisible={setMenuVisible}
-        setSelectedProvinceLayer={setSelectedProvinceLayer}
-        totalLevel={totalLevel}
-      />
+      {
+        areaType === "PHILIPPINES" ? <PhilippinesMapJSX
+          setSelectedProvince={setSelectedProvince}
+          setMenuPosition={setMenuPosition}
+          setMenuVisible={setMenuVisible}
+          setSelectedProvinceLayer={setSelectedProvinceLayer}
+          totalLevel={totalLevel}
+        />: <></>
+      }
+      {
+        areaType === "METRO-MANILA" ? <MetroManilaMapJSX
+          setSelectedProvince={setSelectedProvince}
+          setMenuPosition={setMenuPosition}
+          setMenuVisible={setMenuVisible}
+          setSelectedProvinceLayer={setSelectedProvinceLayer}
+          totalLevel={totalLevel}
+        />: <></>
+      }
       {menuVisible && (
         <div
           className='level-menu'
