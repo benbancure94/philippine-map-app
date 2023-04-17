@@ -1,2 +1,2 @@
-# Metro Manila Map Travel Level App
-This is a clone of My Philippines Travel Level App by <a href="https://github.com/denzdelvillar">Denz de Villar</a>. You can view his work <a href="https://my-philippines-travel-level.com/">here</a>.
+# Philippine Map Travel Level App
+This is a clone of My Philippines Travel Level App by <a href="https://github.com/denzdelvillar">Denz de Villar</a>. You can view his work <a href="https://my-philippines-travel-level.com/">here</a>. The source code of the original repository can be checked <a href="https://github.com/OSSPhilippines">here.</a>
