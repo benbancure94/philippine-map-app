@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PhilippinesMapJSX from '../PhilippinesMapJSX';
 import ".././App.css";
 import MetroManilaMapJSX from '../MetroManilaMapJSX';
+import RizalProvinceMapJSX from '../RizalProvinceMapJSX';
 
 const PhilippinesMap = ({ areaType }) => {
   const [provinceLevels] = useState([]);
@@ -52,6 +53,15 @@ const PhilippinesMap = ({ areaType }) => {
       }
       {
         areaType === "METRO-MANILA" ? <MetroManilaMapJSX
+          setSelectedProvince={setSelectedProvince}
+          setMenuPosition={setMenuPosition}
+          setMenuVisible={setMenuVisible}
+          setSelectedProvinceLayer={setSelectedProvinceLayer}
+          totalLevel={totalLevel}
+        />: <></>
+      }
+      {
+        areaType === "RIZAL-PROVINCE" ? <RizalProvinceMapJSX
           setSelectedProvince={setSelectedProvince}
           setMenuPosition={setMenuPosition}
           setMenuVisible={setMenuVisible}

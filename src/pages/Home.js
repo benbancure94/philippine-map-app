@@ -26,7 +26,7 @@ const Home = () => {
     <ul>
       <li>Laguna</li>
       <li>Cavite</li>
-      <li>Rizal</li>
+      <li><Link className="link" to={"/philippine-map-app/rizal-province-map"}>Rizal</Link></li>
       <li>Quezon</li>
       <li>Bulacan</li>
       <li>Batangas</li>

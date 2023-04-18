@@ -16,6 +16,7 @@ function App() {
           <Route index  element={<Home />} />
           <Route path="map" element = {<MapPage areaType={"PHILIPPINES"}/>} />
           <Route path="metro-manila-map" element = {<MapPage areaType={"METRO-MANILA"}/>} />
+          <Route path="rizal-province-map" element = {<MapPage areaType={"RIZAL-PROVINCE"}/>} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
