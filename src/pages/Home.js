@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import ".././App.css"
-import benedict from ".././benedict.jpg"
+import benedict from ".././benedict.png"
 
 const Home = () => {
     return (
       <section className="about">
     
-    <h2>My Philippines Travel Level (Metro Manila)</h2>
+    <h2>My Philippines Travel Level (Metro Manila + Other Provinces (Coming Soon))</h2>
 
     This simple web app helps you visualize how well-travelled you are in the Philippines (within Metro Manila). 
 
@@ -20,8 +20,17 @@ const Home = () => {
     <h2>How To Use</h2>
     The map is divided into 16 cities and 1 municipality* in Metro Manila. All you have to do is to click on a city/municipality and choose the appropriate level of travel. 
 
-    <br></br>
-    <br></br>
+    <h2>Additional Places</h2>
+    Provinces coming soon... <br></br><br></br>
+    List:
+    <ul>
+      <li>Laguna</li>
+      <li>Cavite</li>
+      <li>Rizal</li>
+      <li>Quezon</li>
+      <li>Bulacan</li>
+      <li>Batangas</li>
+    </ul>
     
     Here's what each level represents:
     <br></br>
