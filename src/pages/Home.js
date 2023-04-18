@@ -46,7 +46,7 @@ const Home = () => {
     <br></br>
     <br></br>
     <section className="asterisk">*There is only one municipality in Metro Manila, which is named Pateros.</section>
-    
+       
 
     <h2>About Me</h2>
 
