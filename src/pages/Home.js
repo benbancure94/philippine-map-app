@@ -33,7 +33,7 @@ const Home = () => {
     <li className="bullet"><b>Passed there</b> - you passed by that area but did not set foot.</li> 
     <li className="bullet"><b>Never been there</b> - you need to travel there soon.</li> 
     
-    <br></br>
+    <br></br>   
 
     Your total score will be updated accordingly. You can then save the image and share on your social media.
     
