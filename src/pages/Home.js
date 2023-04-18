@@ -33,7 +33,7 @@ const Home = () => {
     <li className="bullet"><b>Passed there</b> - you passed by that area but did not set foot.</li> 
     <li className="bullet"><b>Never been there</b> - you need to travel there soon.</li> 
     
-    <br></br>       
+    <br></br>
 
     Your total score will be updated accordingly. You can then save the image and share on your social media.
     
@@ -41,7 +41,7 @@ const Home = () => {
     <br></br>
 
 
-    Click <Link className="link" to={"/metro-manila-map"}>here</Link> to view the map of Metro Manila. Enjoy!
+    Click <Link className="link" to={"/philippine-map-app/metro-manila-map"}>here</Link> to view the map of Metro Manila. Enjoy!
 
     <br></br>
     <br></br>

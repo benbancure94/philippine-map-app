@@ -7,7 +7,7 @@ const Layout = () => {
       <nav className="nav">
         <ul  className="nav-ul">
           <li className="nav">
-            <Link className="nav" to="/">Home</Link>
+            <Link className="nav" to="/philippine-map-app">Home</Link>
           </li>
         </ul>
       </nav>

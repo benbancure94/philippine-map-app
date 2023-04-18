@@ -9,17 +9,17 @@ import NoPage from "./pages/NoPage";
 function App() {
   return (
     <div className="App">
-      <div id="ezoic-pub-ad-placeholder-110"> </div>
+      {/* <div id="ezoic-pub-ad-placeholder-110"> </div> */}
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
+        <Route path="/philippine-map-app" element={<Layout />}>
+          <Route index  element={<Home />} />
           <Route path="map" element = {<MapPage areaType={"PHILIPPINES"}/>} />
           <Route path="metro-manila-map" element = {<MapPage areaType={"METRO-MANILA"}/>} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </BrowserRouter> 
       {/*<div className="Map-container">
         <div className="Map-padding" ref={divRef}>
         <Map/>
