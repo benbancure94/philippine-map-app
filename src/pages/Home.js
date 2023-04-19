@@ -26,9 +26,9 @@ const Home = () => {
     <ul>
       <li>Laguna</li>
       <li>Cavite</li>
-      <li><Link className="link" to={"/philippine-map-app/rizal-province-map"}>Rizal</Link></li>
+      <li><Link className="link" to={"/rizal-province-map"}>Rizal</Link></li>
       <li>Quezon</li>
-      <li>Bulacan</li>
+      <li><Link className="link" to={"/bulacan-province-map"}>Bulacan</Link></li>
       <li>Batangas</li>
     </ul>
     
@@ -50,7 +50,7 @@ const Home = () => {
     <br></br>
 
 
-    Click <Link className="link" to={"/philippine-map-app/metro-manila-map"}>here</Link> to view the map of Metro Manila. Enjoy!
+    Click <Link className="link" to={"/metro-manila-map"}>here</Link> to view the map of Metro Manila. Enjoy!
 
     <br></br>
     <br></br>

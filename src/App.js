@@ -10,13 +10,14 @@ function App() {
   return (
     <div className="App">
       {/* <div id="ezoic-pub-ad-placeholder-110"> </div> */}
-    <BrowserRouter>
+    <BrowserRouter basename='/philippine-map-app'>
       <Routes>
-        <Route path="/philippine-map-app" element={<Layout />}>
+        <Route path="/" element={<Layout />}>
           <Route index  element={<Home />} />
           <Route path="map" element = {<MapPage areaType={"PHILIPPINES"}/>} />
           <Route path="metro-manila-map" element = {<MapPage areaType={"METRO-MANILA"}/>} />
           <Route path="rizal-province-map" element = {<MapPage areaType={"RIZAL-PROVINCE"}/>} />
+          <Route path="bulacan-province-map" element = {<MapPage areaType={"BULACAN-PROVINCE"}/>} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
