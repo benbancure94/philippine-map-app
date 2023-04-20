@@ -5,6 +5,7 @@ import MetroManilaMapJSX from '../MetroManilaMapJSX';
 import RizalProvinceMapJSX from '../RizalProvinceMapJSX';
 import BulacanProvinceMapJSX from '../BulacanProvinceMapJSX';
 import CaviteProvinceMapJSX from '../CaviteProvinceMapJSX';
+import LagunaProvinceMapJSX from '../LagunaProvinceMapJSX';
 
 const PhilippinesMap = ({ areaType }) => {
   const [provinceLevels] = useState([]);
@@ -82,6 +83,15 @@ const PhilippinesMap = ({ areaType }) => {
       }
       {
         areaType === "CAVITE-PROVINCE" ? <CaviteProvinceMapJSX
+          setSelectedProvince={setSelectedProvince}
+          setMenuPosition={setMenuPosition}
+          setMenuVisible={setMenuVisible}
+          setSelectedProvinceLayer={setSelectedProvinceLayer}
+          totalLevel={totalLevel}
+        />: <></>
+      }
+      {
+        areaType === "LAGUNA-PROVINCE" ? <LagunaProvinceMapJSX
           setSelectedProvince={setSelectedProvince}
           setMenuPosition={setMenuPosition}
           setMenuVisible={setMenuVisible}

@@ -19,6 +19,7 @@ function App() {
           <Route path="rizal-province-map" element = {<MapPage areaType={"RIZAL-PROVINCE"}/>} />
           <Route path="bulacan-province-map" element = {<MapPage areaType={"BULACAN-PROVINCE"}/>} />
           <Route path="cavite-province-map" element = {<MapPage areaType={"CAVITE-PROVINCE"}/>} />
+          <Route path="laguna-province-map" element = {<MapPage areaType={"LAGUNA-PROVINCE"}/>} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

@@ -24,7 +24,7 @@ const Home = () => {
     Provinces coming soon... <br></br><br></br>
     List:
     <ul>
-      <li>Laguna</li>
+      <li><Link className="link" to={"/laguna-province-map"}>Laguna</Link></li>
       <li><Link className="link" to={"/cavite-province-map"}>Cavite</Link></li>
       <li><Link className="link" to={"/rizal-province-map"}>Rizal</Link></li>
       <li>Quezon</li>
