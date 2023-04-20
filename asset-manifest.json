@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/philippine-map-app/static/css/main.ddc88a45.css",
-    "main.js": "/philippine-map-app/static/js/main.b1bffcf2.js",
+    "main.js": "/philippine-map-app/static/js/main.e98f149a.js",
     "static/js/787.ed60cf83.chunk.js": "/philippine-map-app/static/js/787.ed60cf83.chunk.js",
     "static/media/benedict.png": "/philippine-map-app/static/media/benedict.03f58d30d207256fb8ee.png",
     "index.html": "/philippine-map-app/index.html",
     "main.ddc88a45.css.map": "/philippine-map-app/static/css/main.ddc88a45.css.map",
-    "main.b1bffcf2.js.map": "/philippine-map-app/static/js/main.b1bffcf2.js.map",
+    "main.e98f149a.js.map": "/philippine-map-app/static/js/main.e98f149a.js.map",
     "787.ed60cf83.chunk.js.map": "/philippine-map-app/static/js/787.ed60cf83.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ddc88a45.css",
-    "static/js/main.b1bffcf2.js"
+    "static/js/main.e98f149a.js"
   ]
 }
