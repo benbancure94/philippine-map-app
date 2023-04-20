@@ -4,6 +4,7 @@ import ".././App.css";
 import MetroManilaMapJSX from '../MetroManilaMapJSX';
 import RizalProvinceMapJSX from '../RizalProvinceMapJSX';
 import BulacanProvinceMapJSX from '../BulacanProvinceMapJSX';
+import CaviteProvinceMapJSX from '../CaviteProvinceMapJSX';
 
 const PhilippinesMap = ({ areaType }) => {
   const [provinceLevels] = useState([]);
@@ -72,6 +73,15 @@ const PhilippinesMap = ({ areaType }) => {
       }
       {
         areaType === "BULACAN-PROVINCE" ? <BulacanProvinceMapJSX
+          setSelectedProvince={setSelectedProvince}
+          setMenuPosition={setMenuPosition}
+          setMenuVisible={setMenuVisible}
+          setSelectedProvinceLayer={setSelectedProvinceLayer}
+          totalLevel={totalLevel}
+        />: <></>
+      }
+      {
+        areaType === "CAVITE-PROVINCE" ? <CaviteProvinceMapJSX
           setSelectedProvince={setSelectedProvince}
           setMenuPosition={setMenuPosition}
           setMenuVisible={setMenuVisible}

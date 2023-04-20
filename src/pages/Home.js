@@ -25,7 +25,7 @@ const Home = () => {
     List:
     <ul>
       <li>Laguna</li>
-      <li>Cavite</li>
+      <li><Link className="link" to={"/cavite-province-map"}>Cavite</Link></li>
       <li><Link className="link" to={"/rizal-province-map"}>Rizal</Link></li>
       <li>Quezon</li>
       <li><Link className="link" to={"/bulacan-province-map"}>Bulacan</Link></li>
