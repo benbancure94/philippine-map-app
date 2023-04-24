@@ -14,12 +14,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index  element={<Home />} />
-          <Route path="map" element = {<MapPage areaType={"PHILIPPINES"}/>} />
-          <Route path="metro-manila-map" element = {<MapPage areaType={"METRO-MANILA"}/>} />
-          <Route path="rizal-province-map" element = {<MapPage areaType={"RIZAL-PROVINCE"}/>} />
-          <Route path="bulacan-province-map" element = {<MapPage areaType={"BULACAN-PROVINCE"}/>} />
-          <Route path="cavite-province-map" element = {<MapPage areaType={"CAVITE-PROVINCE"}/>} />
-          <Route path="laguna-province-map" element = {<MapPage areaType={"LAGUNA-PROVINCE"}/>} />
+          <Route path="map/metro-manila" element = {<MapPage mapOfPlace={"Metro Manila"}/>} />
+          <Route path="map/rizal" element = {<MapPage mapOfPlace={"Rizal"}/>} />
+          <Route path="map/bulacan" element = {<MapPage mapOfPlace={"Bulacan"}/>} />
+          <Route path="map/cavite" element = {<MapPage mapOfPlace={"Cavite"}/>} />
+          <Route path="map/laguna" element = {<MapPage mapOfPlace={"Laguna"}/>} />
+          <Route path="map/batangas" element = {<MapPage mapOfPlace={"Batangas"}/>} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

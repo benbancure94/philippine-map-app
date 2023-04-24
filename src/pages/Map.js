@@ -1,13 +1,8 @@
 import React, { useState } from 'react';
-import PhilippinesMapJSX from '../PhilippinesMapJSX';
 import ".././App.css";
-import MetroManilaMapJSX from '../MetroManilaMapJSX';
-import RizalProvinceMapJSX from '../RizalProvinceMapJSX';
-import BulacanProvinceMapJSX from '../BulacanProvinceMapJSX';
-import CaviteProvinceMapJSX from '../CaviteProvinceMapJSX';
-import LagunaProvinceMapJSX from '../LagunaProvinceMapJSX';
+import MapJSX from '../MapJSX';
 
-const PhilippinesMap = ({ areaType }) => {
+const PhilippinesMap = ({ areaType, mapOfPlace }) => {
   const [provinceLevels] = useState([]);
   const [selectedProvince, setSelectedProvince] = useState(null);
   const [selectedProvinceLayer, setSelectedProvinceLayer] = useState(null);
@@ -45,60 +40,15 @@ const PhilippinesMap = ({ areaType }) => {
 
   return (
     <div>
-      {
-        areaType === "PHILIPPINES" ? <PhilippinesMapJSX
-          setSelectedProvince={setSelectedProvince}
-          setMenuPosition={setMenuPosition}
-          setMenuVisible={setMenuVisible}
-          setSelectedProvinceLayer={setSelectedProvinceLayer}
-          totalLevel={totalLevel}
-        />: <></>
-      }
-      {
-        areaType === "METRO-MANILA" ? <MetroManilaMapJSX
-          setSelectedProvince={setSelectedProvince}
-          setMenuPosition={setMenuPosition}
-          setMenuVisible={setMenuVisible}
-          setSelectedProvinceLayer={setSelectedProvinceLayer}
-          totalLevel={totalLevel}
-        />: <></>
-      }
-      {
-        areaType === "RIZAL-PROVINCE" ? <RizalProvinceMapJSX
-          setSelectedProvince={setSelectedProvince}
-          setMenuPosition={setMenuPosition}
-          setMenuVisible={setMenuVisible}
-          setSelectedProvinceLayer={setSelectedProvinceLayer}
-          totalLevel={totalLevel}
-        />: <></>
-      }
-      {
-        areaType === "BULACAN-PROVINCE" ? <BulacanProvinceMapJSX
-          setSelectedProvince={setSelectedProvince}
-          setMenuPosition={setMenuPosition}
-          setMenuVisible={setMenuVisible}
-          setSelectedProvinceLayer={setSelectedProvinceLayer}
-          totalLevel={totalLevel}
-        />: <></>
-      }
-      {
-        areaType === "CAVITE-PROVINCE" ? <CaviteProvinceMapJSX
-          setSelectedProvince={setSelectedProvince}
-          setMenuPosition={setMenuPosition}
-          setMenuVisible={setMenuVisible}
-          setSelectedProvinceLayer={setSelectedProvinceLayer}
-          totalLevel={totalLevel}
-        />: <></>
-      }
-      {
-        areaType === "LAGUNA-PROVINCE" ? <LagunaProvinceMapJSX
-          setSelectedProvince={setSelectedProvince}
-          setMenuPosition={setMenuPosition}
-          setMenuVisible={setMenuVisible}
-          setSelectedProvinceLayer={setSelectedProvinceLayer}
-          totalLevel={totalLevel}
-        />: <></>
-      }
+      <MapJSX
+        setSelectedProvince={setSelectedProvince}
+        setMenuPosition={setMenuPosition}
+        setMenuVisible={setMenuVisible}
+        setSelectedProvinceLayer={setSelectedProvinceLayer}
+        totalLevel={totalLevel}
+
+        mapOfPlace={mapOfPlace}
+      />
       {menuVisible && (
         <div
           className='level-menu'

@@ -6,9 +6,9 @@ const Home = () => {
     return (
       <section className="about">
     
-    <h2>My Philippines Travel Level (Metro Manila + Other Provinces (Coming Soon))</h2>
+    <h2>My Philippines Travel Level (Cities and Municipalities)</h2>
 
-    This simple web app helps you visualize how well-travelled you are in the Philippines (within Metro Manila). 
+    This simple web app helps you visualize how well-travelled you are in the Philippines based on city and municipality level.
 
     <br></br>
     <br></br>
@@ -18,18 +18,19 @@ const Home = () => {
     You can also view the source code of mine, i.e. the cloned one <div className="link" onClick={() => window.open('https://github.com/benbancure94/philippine-map-app')}>here↗</div>.
 
     <h2>How To Use</h2>
-    The map is divided into 16 cities and 1 municipality* in Metro Manila. All you have to do is to click on a city/municipality and choose the appropriate level of travel. 
+    Select the name of a province or Metro Manila. Each map of the selected name of province or Metro Manila is divided into cities and municipalities*. All you have to do is to click on a city/municipality and choose the appropriate level of travel. 
 
     <h2>Additional Places</h2>
-    Provinces coming soon... <br></br><br></br>
-    List:
+    More provinces coming soon... <br></br><br></br>
     <ul>
-      <li><Link className="link" to={"/laguna-province-map"}>Laguna</Link></li>
-      <li><Link className="link" to={"/cavite-province-map"}>Cavite</Link></li>
-      <li><Link className="link" to={"/rizal-province-map"}>Rizal</Link></li>
       <li>Quezon</li>
-      <li><Link className="link" to={"/bulacan-province-map"}>Bulacan</Link></li>
-      <li>Batangas</li>
+      <li>Cagayan</li>
+      <li>Bohol</li>
+      <li>Cebu</li>
+      <li>Palawan</li>
+      <li>Occidental Mindoro</li>
+      <li>Oriental Mindoro</li>
+      <li>Marinduque</li>
     </ul>
     
     Here's what each level represents:
@@ -49,13 +50,20 @@ const Home = () => {
     <br></br>
     <br></br>
 
-
-    Click <Link className="link" to={"/metro-manila-map"}>here</Link> to view the map of Metro Manila. Enjoy!
+    <h2>MAPS</h2>
+    Click on one on the following names to view its map. Enjoy!
+    <ul>
+      <li><Link className="link" to={"/map/metro-manila"}>Metro Manila</Link></li>
+      <li><Link className="link" to={"/map/rizal"}>Rizal</Link></li>
+      <li><Link className="link" to={"/map/bulacan"}>Bulacan</Link></li>
+      <li><Link className="link" to={"/map/cavite"}>Cavite</Link></li>
+      <li><Link className="link" to={"/map/laguna"}>Laguna</Link></li>
+      <li><Link className="link" to={"/map/batangas"}>Batangas</Link></li>
+    </ul>
 
     <br></br>
     <br></br>
     <section className="asterisk">*There is only one municipality in Metro Manila, which is named Pateros.</section>
-       
 
     <h2>About Me</h2>
 

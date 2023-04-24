@@ -3,7 +3,7 @@ import { toJpeg } from 'html-to-image'
 import Map from "./Map"
 import ".././App.css"
 
-function MapPage({ areaType }) {
+function MapPage({ areaType, mapOfPlace }) {
     const divRef = useRef(null);
   
     const fileName = 'phMap.jpg'
@@ -28,7 +28,7 @@ function MapPage({ areaType }) {
         <section>
             <section className="Map-container">
                 <section className="Map-padding" ref={divRef}>
-                <Map areaType={areaType}/>
+                <Map mapOfPlace={mapOfPlace}/>
                 </section>
                 <section className="save-image-button" onClick={downloadJpg}>Save Image</section>
             </section>
