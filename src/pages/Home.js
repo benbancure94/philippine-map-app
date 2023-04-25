@@ -59,6 +59,8 @@ const Home = () => {
       <li><Link className="link" to={"/map/laguna"}>Laguna</Link></li>
       <li><Link className="link" to={"/map/batangas"}>Batangas</Link></li>
       <li><Link className="link" to={"/map/quezon"}>Quezon</Link></li>
+      <li><Link className="link" to={"/map/nueva-ecija"}>Nueva Ecija</Link></li>
+      <li><Link className="link" to={"/map/nueva-vizcaya"}>Nueva Vizcaya</Link></li>
     </ul>
 
     <br></br>
