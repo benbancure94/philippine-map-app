@@ -20,6 +20,7 @@ function App() {
           <Route path="map/cavite" element = {<MapPage mapOfPlace={"Cavite"}/>} />
           <Route path="map/laguna" element = {<MapPage mapOfPlace={"Laguna"}/>} />
           <Route path="map/batangas" element = {<MapPage mapOfPlace={"Batangas"}/>} />
+          <Route path="map/quezon" element = {<MapPage mapOfPlace={"Quezon"}/>} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

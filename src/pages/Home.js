@@ -23,7 +23,6 @@ const Home = () => {
     <h2>Additional Places</h2>
     More provinces coming soon... <br></br><br></br>
     <ul>
-      <li>Quezon</li>
       <li>Cagayan</li>
       <li>Bohol</li>
       <li>Cebu</li>
@@ -59,6 +58,7 @@ const Home = () => {
       <li><Link className="link" to={"/map/cavite"}>Cavite</Link></li>
       <li><Link className="link" to={"/map/laguna"}>Laguna</Link></li>
       <li><Link className="link" to={"/map/batangas"}>Batangas</Link></li>
+      <li><Link className="link" to={"/map/quezon"}>Quezon</Link></li>
     </ul>
 
     <br></br>

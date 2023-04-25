@@ -78,7 +78,7 @@ const MapJSX = ({
             xmlns="http://www.w3.org/2000/svg"
             id="svg574"
             version="1.1"
-            viewBox="0 0 840 1221"
+            viewBox="0 0 840 1400"
             xmlSpace="preserve"
          >
             <g id="Background">
