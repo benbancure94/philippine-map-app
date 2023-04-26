@@ -23,13 +23,21 @@ const Home = () => {
     <h2>Additional Places</h2>
     More provinces coming soon... <br></br><br></br>
     <ul>
-      <li>Cagayan</li>
       <li>Bohol</li>
       <li>Cebu</li>
       <li>Palawan</li>
       <li>Occidental Mindoro</li>
       <li>Oriental Mindoro</li>
       <li>Marinduque</li>
+      <li>Romblon</li>
+      <li>Masbate</li>
+      <li>Aklan</li>
+      <li>Capiz</li>
+      <li>Antique</li>
+      <li>Iloilo</li>
+      <li>Guimaras</li>
+      <li>Negros Occidental</li>
+      <li>Negros Oriental</li>
     </ul>
     
     Here's what each level represents:
@@ -61,6 +69,8 @@ const Home = () => {
       <li><Link className="link" to={"/map/quezon"}>Quezon</Link></li>
       <li><Link className="link" to={"/map/nueva-ecija"}>Nueva Ecija</Link></li>
       <li><Link className="link" to={"/map/nueva-vizcaya"}>Nueva Vizcaya</Link></li>
+      <li><Link className="link" to={"/map/isabela"}>Isabela</Link></li>
+      <li><Link className="link" to={"/map/cagayan"}>Cagayan</Link></li>
     </ul>
 
     <br></br>
