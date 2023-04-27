@@ -28,7 +28,6 @@ const Home = () => {
       <li>Palawan</li>
       <li>Occidental Mindoro</li>
       <li>Oriental Mindoro</li>
-      <li>Marinduque</li>
       <li>Romblon</li>
       <li>Masbate</li>
       <li>Aklan</li>
@@ -71,6 +70,8 @@ const Home = () => {
       <li><Link className="link" to={"/map/nueva-vizcaya"}>Nueva Vizcaya</Link></li>
       <li><Link className="link" to={"/map/isabela"}>Isabela</Link></li>
       <li><Link className="link" to={"/map/cagayan"}>Cagayan</Link></li>
+      <li><Link className="link" to={"/map/marinduque"}>Marinduque</Link></li>
+      <li><Link className="link" to={"/map/pangasinan"}>Pangasinan</Link></li>
     </ul>
 
     <br></br>

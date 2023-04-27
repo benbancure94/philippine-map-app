@@ -25,6 +25,8 @@ function App() {
           <Route path="map/nueva-vizcaya" element = {<MapPage mapOfPlace={"Nueva Vizcaya"}/>} />
           <Route path="map/isabela" element = {<MapPage mapOfPlace={"Isabela"}/>} />
           <Route path="map/cagayan" element = {<MapPage mapOfPlace={"Cagayan"}/>} />
+          <Route path="map/marinduque" element = {<MapPage mapOfPlace={"Marinduque"}/>} />
+          <Route path="map/pangasinan" element = {<MapPage mapOfPlace={"Pangasinan"}/>} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
