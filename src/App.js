@@ -27,6 +27,10 @@ function App() {
           <Route path="map/cagayan" element = {<MapPage mapOfPlace={"Cagayan"}/>} />
           <Route path="map/marinduque" element = {<MapPage mapOfPlace={"Marinduque"}/>} />
           <Route path="map/pangasinan" element = {<MapPage mapOfPlace={"Pangasinan"}/>} />
+          <Route path="map/occidental-mindoro" element = {<MapPage mapOfPlace={"Occidental Mindoro"}/>} />
+          <Route path="map/oriental-mindoro" element = {<MapPage mapOfPlace={"Oriental Mindoro"}/>} />
+          <Route path="map/romblon" element = {<MapPage mapOfPlace={"Romblon"}/>} />
+          <Route path="map/zambales" element = {<MapPage mapOfPlace={"Zambales"}/>} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

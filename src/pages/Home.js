@@ -72,6 +72,10 @@ const Home = () => {
       <li><Link className="link" to={"/map/cagayan"}>Cagayan</Link></li>
       <li><Link className="link" to={"/map/marinduque"}>Marinduque</Link></li>
       <li><Link className="link" to={"/map/pangasinan"}>Pangasinan</Link></li>
+      <li><Link className="link" to={"/map/occidental-mindoro"}>Occidental Mindoro</Link></li>
+      <li><Link className="link" to={"/map/oriental-mindoro"}>Oriental Mindoro</Link></li>
+      <li><Link className="link" to={"/map/romblon"}>Romblon</Link></li>
+      <li><Link className="link" to={"/map/zambales"}>Zambales</Link></li>
     </ul>
 
     <br></br>
