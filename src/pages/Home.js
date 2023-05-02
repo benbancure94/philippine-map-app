@@ -26,9 +26,6 @@ const Home = () => {
       <li>Bohol</li>
       <li>Cebu</li>
       <li>Palawan</li>
-      <li>Occidental Mindoro</li>
-      <li>Oriental Mindoro</li>
-      <li>Romblon</li>
       <li>Masbate</li>
       <li>Aklan</li>
       <li>Capiz</li>
@@ -76,6 +73,11 @@ const Home = () => {
       <li><Link className="link" to={"/map/oriental-mindoro"}>Oriental Mindoro</Link></li>
       <li><Link className="link" to={"/map/romblon"}>Romblon</Link></li>
       <li><Link className="link" to={"/map/zambales"}>Zambales</Link></li>
+      <li><Link className="link" to={"/map/pampanga"}>Pampanga</Link></li>
+      <li><Link className="link" to={"/map/bataan"}>Bataan</Link></li>
+      <li><Link className="link" to={"/map/tarlac"}>Tarlac</Link></li>
+      <li><Link className="link" to={"/map/camarines-norte"}>Camarines Norte</Link></li>
+      <li><Link className="link" to={"/map/camarines-sur"}>Camarines Sur</Link></li>
     </ul>
 
     <br></br>
