@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import ".././App.css"
 import benedict from ".././benedict.png"
+import PhilippineMapShapes from "../PhilippineMapShapes.json";
 
 const Home = () => {
     return (
@@ -22,19 +23,6 @@ const Home = () => {
 
     <h2>Additional Places</h2>
     More provinces coming soon... <br></br><br></br>
-    <ul>
-      <li>Bohol</li>
-      <li>Cebu</li>
-      <li>Palawan</li>
-      <li>Masbate</li>
-      <li>Aklan</li>
-      <li>Capiz</li>
-      <li>Antique</li>
-      <li>Iloilo</li>
-      <li>Guimaras</li>
-      <li>Negros Occidental</li>
-      <li>Negros Oriental</li>
-    </ul>
     
     Here's what each level represents:
     <br></br>
@@ -56,28 +44,9 @@ const Home = () => {
     <h2>MAPS</h2>
     Click on one on the following names to view its map. Enjoy!
     <ul>
-      <li><Link className="link" to={"/map/metro-manila"}>Metro Manila</Link></li>
-      <li><Link className="link" to={"/map/rizal"}>Rizal</Link></li>
-      <li><Link className="link" to={"/map/bulacan"}>Bulacan</Link></li>
-      <li><Link className="link" to={"/map/cavite"}>Cavite</Link></li>
-      <li><Link className="link" to={"/map/laguna"}>Laguna</Link></li>
-      <li><Link className="link" to={"/map/batangas"}>Batangas</Link></li>
-      <li><Link className="link" to={"/map/quezon"}>Quezon</Link></li>
-      <li><Link className="link" to={"/map/nueva-ecija"}>Nueva Ecija</Link></li>
-      <li><Link className="link" to={"/map/nueva-vizcaya"}>Nueva Vizcaya</Link></li>
-      <li><Link className="link" to={"/map/isabela"}>Isabela</Link></li>
-      <li><Link className="link" to={"/map/cagayan"}>Cagayan</Link></li>
-      <li><Link className="link" to={"/map/marinduque"}>Marinduque</Link></li>
-      <li><Link className="link" to={"/map/pangasinan"}>Pangasinan</Link></li>
-      <li><Link className="link" to={"/map/occidental-mindoro"}>Occidental Mindoro</Link></li>
-      <li><Link className="link" to={"/map/oriental-mindoro"}>Oriental Mindoro</Link></li>
-      <li><Link className="link" to={"/map/romblon"}>Romblon</Link></li>
-      <li><Link className="link" to={"/map/zambales"}>Zambales</Link></li>
-      <li><Link className="link" to={"/map/pampanga"}>Pampanga</Link></li>
-      <li><Link className="link" to={"/map/bataan"}>Bataan</Link></li>
-      <li><Link className="link" to={"/map/tarlac"}>Tarlac</Link></li>
-      <li><Link className="link" to={"/map/camarines-norte"}>Camarines Norte</Link></li>
-      <li><Link className="link" to={"/map/camarines-sur"}>Camarines Sur</Link></li>
+      {
+        PhilippineMapShapes.map(place => <li><Link className="link" to={"/map/" + place.smallName}>{ place.place }</Link></li>)
+      }
     </ul>
 
     <br></br>
